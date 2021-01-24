@@ -24,7 +24,15 @@ namespace WindowsFormsApp
         /// <param name="e"></param>
         private void actionButton_Click(object sender, EventArgs e)
         {
-            this.MessageLabel.Text = "クリックされました。";
+            int one = 1;
+            int three = 3;
+            int four = one + three;
+
+            four++;
+            four++;
+            four--;
+
+            this.MessageLabel.Text = four.ToString();
         }
 
         /// <summary>
@@ -34,7 +42,7 @@ namespace WindowsFormsApp
         /// <param name="e"></param>
         private void actionButton_MouseHover(object sender, EventArgs e)
         {
-            this.MessageLabel.Text = "マウスが乗りました。";
+            //this.MessageLabel.Text = "マウスが乗りました。";
         }
 
         /// <summary>
@@ -44,7 +52,10 @@ namespace WindowsFormsApp
         /// <param name="e"></param>
         private void actionButton_MouseLeave(object sender, EventArgs e)
         {
-            this.MessageLabel.Text = "マウスが降りました。";
+            string hello = "こんにちは";
+            string goodNight = "こんばんは";
+
+            this.MessageLabel.Text = hello + goodNight;
         }
     }
 }
